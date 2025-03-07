@@ -58,6 +58,14 @@ Ball.prototype.draw = function() {
   
         if (distance < this.size + balls[j].size) {
           balls[j].color = this.color = 'rgb(' + random(0, 255) + ',' + random(0, 255) + ',' + random(0, 255) +')';
+          // this is probably a thing underneath for velocity reverse... could barely find any good examples of how to do it properly
+          // function moveBall() {
+          //   positionX = positionX + velocity;
+          //   ball.style.left = positionX + 'px';
+          //   let reserve = false
+          //   if (positionX = 20000 + 'px') return;
+          //   !reverse;
+          // }
           // add velocities and figure out how to bounce them off one another 
         }
       }
